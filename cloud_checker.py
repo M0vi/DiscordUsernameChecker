@@ -103,9 +103,9 @@ create_empty_file("data/names_to_check.txt")
 create_empty_file("logs/error.txt")
 clear_file("logs/error.txt")
 
-create_empty_file("data/proxies.txt")
+create_empty_file("proxies.txt")
 
-with Path("data/proxies.txt").open("r", encoding='utf-8') as proxies_file:
+with Path("proxies.txt").open("r", encoding='utf-8') as proxies_file:
     proxies = proxies_file.read().splitlines()
 
 
